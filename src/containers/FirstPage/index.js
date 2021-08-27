@@ -7,6 +7,7 @@ const FirstPage = () => {
   return (
     <div className="first-page">
       Привет, тут мыначинаем работу
+      Привет, тут мыначинаем работу
     </div>
   );
 };
