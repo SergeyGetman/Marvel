@@ -1,6 +1,113 @@
 
-.first-page{
-  background: darkgreen;
-  font-family: Bahnschrift;
-  font-size: 74px;
+.title{
+  flex-direction: column;
+}
+
+
+.tittle-one{
+  display: flex;
+  position: absolute;
+  width: 320px;
+  height: 37px;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-left: 166px;
+  margin-top: 50px;
+
+}
+.marvel{
+  color: #b70b0b;
+}
+
+.title-two{
+  display: inline-block;
+  max-width: 420px;
+  height: 52px;
+  margin-left: 986px;
+  margin-top: 55px;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.header-logo-tor{
+  width: 560px;
+  height: 255px;
+  margin-top: 137px;
+  margin-left: 140px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+.image-logo{
+  display: inline-flex;
+  background-image: url("../images/Thumbnail.png");
+  margin: 35px 40px 330px 35px;
+  height: 180px;
+  width: 180px;
+  max-height: 300px;
+}
+
+
+.name-TOR {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 5px 249px 186px 250px;
+}
+.text-bottom-tor{
+  font-size: 14px;
+  display: inline-flex;
+  margin: 4px 75px 0px -40px;
+  width: 250px;
+  height: 95px;
+  display: flex;
+
+}
+button {
+  text-decoration: none;
+  color: #f4e8e8;
+  display: inline-block;
+  position: relative;
+  margin-right: 33px;
+  margin-left: -20px;
+  margin-top: 30px;
+  height: 30px;
+  width: 100px;
+  border: 1px solid;
+  background:linear-gradient(-25deg, transparent 10px, #dd204f 0);
+  border-image-slice: 1;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .2s cubic-bezier(.165, .84, .44, 1);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: rgba(74, 97, 234, 0.62);
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d24599);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.button:hover {
+  background: rgba(255, 255, 255, 0);
+
+}
+.button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+  background-color: #d50082;
 }
