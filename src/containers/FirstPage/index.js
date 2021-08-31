@@ -39,22 +39,30 @@ const FirstPage = () => {
               <div className="header-logo-invent">
 
 
-
-
               </div>
 
-
             </div>
-
-
-
-
 
           </div>
 
 
       </div>
+      <div className="header-logo-right">
+        <div className="text-inside">
+          Random character for today!<br/>
+          Do you want to get to know him better? <br/>
+          <br/>
+          Or choose another one
+        </div>
+        <div className="images-logo">
+          <div className="molt"></div>
+            <div className="shield"></div>
+        </div>
+          <button className="but-right">try it</button>
+      </div>
 
+
+            <div className="sidebar"></div>
     </div>
 
 

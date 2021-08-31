@@ -7,7 +7,7 @@
 .tittle-one{
   display: flex;
   position: absolute;
-  width: 320px;
+  width: 340px;
   height: 37px;
 
   font-family: Roboto Condensed;
@@ -20,7 +20,13 @@
 
 }
 .marvel{
-  color: #b70b0b;
+  color: #c10e0e;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: normal;
+  margin-right: 10px;
+  line-height: 33px;
+
 }
 
 .title-two{
@@ -56,17 +62,18 @@
 
 
 .name-TOR {
+
   font-size: 22px;
   font-weight: 700;
   margin: 5px 249px 186px 250px;
+  text-align: left;
 }
 .text-bottom-tor{
   font-size: 14px;
-  display: inline-flex;
   margin: 4px 75px 0px -40px;
   width: 250px;
   height: 95px;
-  display: flex;
+
 
 }
 button {
@@ -80,13 +87,14 @@ button {
   height: 30px;
   width: 100px;
   border: 1px solid;
-  background:linear-gradient(-25deg, transparent 10px, #dd204f 0);
+  background:linear-gradient(-75deg, transparent 5px, #dd204f 0);
   border-image-slice: 1;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   transition: .2s cubic-bezier(.165, .84, .44, 1);
+  clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%);
 }
 
 .button:before {
@@ -110,4 +118,40 @@ button {
   top: auto;
   height: 100%;
   background-color: #d50082;
+}
+
+.header-logo-right{
+  width: 560px;
+  height: 255px;
+  background-color: #252124;
+  margin-left: 700px;
+  margin-top: -255px;
+  display: flex;
+}
+.text-inside{
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 40px;
+}
+.molt{
+  background-image: url("../images/mjolnir.png");
+  height: 196px;
+  width: 156px;
+  margin-left: 29px;
+  margin-top: 50px;
+}
+.shield{
+  background-image: url("../images/shield.png");
+  height: 100px;
+  width: 100px;
+  margin-top: -110px;
+  margin-left: 10px;
+}
+.but-right{
+  display: inline-block;
+  margin-top: 200px;
+  margin-left: -500px;
 }
