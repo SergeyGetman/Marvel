@@ -12,7 +12,7 @@ const routes = [
     component: ExampleTwo,
   },
   {
-    path: '/',
+    path: '/first-page',
     component: FirstPage,
   },
 ];

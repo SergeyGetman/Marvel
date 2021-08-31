@@ -1,35 +1,35 @@
-import React from 'react'
-import {useDispatch, useSelector} from "react-redux";
-import {setLanguage} from "../../redux/actionCreators";
-import './styles.scss'
-import {Link} from "react-router-dom";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setLanguage } from '../../redux/actionCreators';
+import './styles.scss';
+import { Link } from 'react-router-dom';
 
 function ExampleTwo() {
-  const currentLanguage = useSelector(state => state.language)
-  const dispatch = useDispatch()
+  const currentLanguage = useSelector((state) => state.language);
+  const dispatch = useDispatch();
 
-  const handleClick = (e) => dispatch(setLanguage(e.target.id))
+  const handleClick = (e) => dispatch(setLanguage(e.target.id));
 
   const languages = [
     {
       id: 'en',
-      name: 'English'
+      name: 'English',
     },
     {
       id: 'ru',
-      name: 'Russian'
+      name: 'Russian',
     },
     {
       id: 'fr',
-      name: 'French'
+      name: 'French',
     },
-  ]
+  ];
 
   return (
     <div className="content">
       <Link to="/example-one">Example one</Link>
       <div className="radiobuttons">
-        {languages.map(language => (
+        {languages.map((language) => (
           <React.Fragment key={language.id}>
             <input
               type="radio"

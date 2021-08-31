@@ -1,35 +1,35 @@
-import React from 'react'
-import { connect } from "react-redux";
-import { setLanguage } from "../../redux/actionCreators";
-import {Link} from "react-router-dom";
+import React from 'react';
+import { connect } from 'react-redux';
+import { setLanguage } from '../../redux/actionCreators';
+import { Link } from 'react-router-dom';
 
 function ExampleOne(props) {
   // const currentLanguage = props.currentLanguage
   // const setLanguage = props.setLanguage
-  const { currentLanguage, setLanguage } = props
+  const { currentLanguage, setLanguage } = props;
 
-  const handleClick = (e) => setLanguage(e.target.id)
+  const handleClick = (e) => setLanguage(e.target.id);
 
   const languages = [
     {
       id: 'en',
-      name: 'English'
+      name: 'English',
     },
     {
       id: 'ru',
-      name: 'Russian'
+      name: 'Russian',
     },
     {
       id: 'fr',
-      name: 'French'
+      name: 'French',
     },
-  ]
+  ];
 
   return (
     <div>
       <Link to="/example-two">Example two</Link>
       <div>
-        {languages.map(language => (
+        {languages.map((language) => (
           <React.Fragment key={language.id}>
             <input
               type="radio"
@@ -46,13 +46,13 @@ function ExampleOne(props) {
 }
 
 // connect data from redux state to App
-const mapStateToProps = state => ({
-  currentLanguage: state.language
-})
+const mapStateToProps = (state) => ({
+  currentLanguage: state.language,
+});
 
 // connect action creators to App
 const mapDispatchToProps = {
-  setLanguage
-}
+  setLanguage,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExampleOne);
