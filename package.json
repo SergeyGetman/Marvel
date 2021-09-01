@@ -16,7 +16,8 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "node-sass": "5"
+    "node-sass": "5",
+    "prettier": "^2.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

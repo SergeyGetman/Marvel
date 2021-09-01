@@ -1,6 +1,6 @@
-import ExampleOne from "../containers/ExampleOne";
-import ExampleTwo from "../containers/ExampleTwo";
-import FirstPage from "../containers/FirstPage";
+import ExampleOne from '../containers/ExampleOne';
+import ExampleTwo from '../containers/ExampleTwo';
+import FirstPage from '../containers/FirstPage';
 
 const routes = [
   {
@@ -12,9 +12,9 @@ const routes = [
     component: ExampleTwo,
   },
   {
-    path: '/first-page',
-    component: FirstPage
-  }
-]
+    path: '/',
+    component: FirstPage,
+  },
+];
 
-export default routes
+export default routes;
