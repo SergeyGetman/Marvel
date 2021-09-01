@@ -1,0 +1,10 @@
+.hero {
+  width: 100%;
+  box-sizing: border-box;
+}
+.hero__character {
+  width: 50%;
+}
+.hero__tryit {
+  width: 50%;
+}

@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 100px;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  color: #881c1a;
+  font-size: 24px;
+  text-decoration: none;
+}
+.sub-logo {
+  color: #000;
+  padding-left: 8px;
+  font-size: 20px;
+}
+.nav {
+  display: inline-flex;
+}
+.nav-item {
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+.nav-item:after {
+  content: '/';
+  position: absolute;
+  margin-left: 8px;
+}
+.nav-item:last-child:after {
+  content: '';
+  margin-left: 0;
+}
