@@ -1,6 +1,6 @@
-import HomePage from './HomePage';
-import Characters from './Characters';
-import Comics from './Comics';
+import HomePage from './HomePage/index.jsx';
+import Characters from './Characters/index.jsx';
+import Comics from './Comics/index.jsx';
 
 export const routes = [
   {
