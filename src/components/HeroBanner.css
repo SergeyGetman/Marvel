@@ -1,10 +1,92 @@
 .hero {
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .hero__character {
   width: 50%;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.character__photo {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  background-image: url('../assets/images/characters/thor.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.character__photo::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.character__description {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.character__description .title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.character__description .description {
+  margin-bottom: 8px;
+}
+.character__description .toolbar {
+  max-width: 60%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: left;
 }
 .hero__tryit {
-  width: 50%;
+  position: relative;
+  width: calc(50% - 30px);
+  margin-left: 30px;
+  background: #232222;
+  color: #fff;
+  padding: 35px 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__tryit::before {
+  content: '';
+  background-image: url('../assets/images/mjolnir.png');
+  width: 189px;
+  height: 189px;
+  position: absolute;
+  right: -40px;
+  bottom: 10px;
+  z-index: 2;
+}
+.hero__tryit::after {
+  content: '';
+  background-image: url('../assets/images/shield.png');
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 67px;
+  bottom: 10px;
+  z-index: 2;
+}
+.tryit__title {
+  font-weight: bold;
+  font-size: 28px;
 }

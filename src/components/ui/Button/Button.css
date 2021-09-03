@@ -1,0 +1,19 @@
+.button {
+  padding: 11px 18px;
+  text-decoration: none;
+  color: #f4e8e8;
+  display: inline-block;
+  position: relative;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%); */
+}
+.button.primary {
+  background: #9f0013;
+}
+.button.secondary {
+  background: #5c5c5c;
+}
