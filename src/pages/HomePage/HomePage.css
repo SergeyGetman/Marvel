@@ -1,0 +1,17 @@
+.characterList {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.characterList_characters {
+  width: 60%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.characterList_detail {
+  width: 40%;
+}

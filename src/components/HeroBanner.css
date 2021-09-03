@@ -18,7 +18,6 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  max-width: 200px;
   height: 100%;
   background-image: url('../assets/images/characters/thor.png');
   background-position: center center;
@@ -46,12 +45,13 @@
   margin-bottom: 8px;
 }
 .character__description .toolbar {
-  max-width: 60%;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  justify-items: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.character__description .toolbar .button {
+  margin-right: 30px;
 }
 .hero__tryit {
   position: relative;
@@ -88,5 +88,5 @@
 }
 .tryit__title {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
 }
