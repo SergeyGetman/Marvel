@@ -8,10 +8,16 @@
 .characterList_characters {
   width: 60%;
   display: grid;
-  gap: 40px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
 .characterList_detail {
-  width: 40%;
+  width: calc(40% - 20px);
+  padding-left: 20px;
+  
+}
+
+.caracterDetail__header{
+  height: 180px;
 }

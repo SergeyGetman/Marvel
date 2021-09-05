@@ -1,0 +1,8 @@
+.caracterDetail__comicslist{
+    box-shadow: 0 0 10px rgba(122, 120, 150, 0.5); /* Параметры тени */
+    margin: 12px;
+    max-height: 40px;
+    max-width: 400px;
+    
+    
+}

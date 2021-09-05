@@ -1,0 +1,76 @@
+.caracterDetail {
+
+  height: 765px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(20, 7, 199, 0.5); /* Параметры тени */
+}
+.caracterDetail__header {
+  height: 180px;
+  display: inline-block;
+  position: inherit;
+  box-shadow: blue;
+}
+
+
+.caracterDetail__avatar {
+  background-image: url('../../src/assets/images/characters/loki.jpg');
+  height: 150px;
+  width: 150px;
+
+  margin: 25px 0px 0px 25px;
+  position: absolute;
+}
+
+.caracterDetail__info{
+    display: grid;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.caracterDetail__name {
+  height: 30px;
+  width: 42px;
+    color: black;
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    margin-top: 20px;
+ 
+}
+
+
+.button__type {
+  width: 120px;
+  height: 38px;
+  background-color: rgb(224, 26, 26);
+  padding: 11px 18px;
+  text-decoration: none;
+  color: #ebebf5;
+  display: inline;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%);
+}
+.button__type.primary {
+  background: #9f0013;
+}
+.button__type.secondary {
+  background: #5c5c5c;
+
+}
+.caracterDetail__text{
+    height: 130px;
+    width: 425px;
+    margin: 0px 0px 10px 20px;
+    font-family: cursive;
+}
+
+.caracterDetail__title{
+    height: 25px;
+    font-family:fantasy;
+    margin: 15px 0px 0px 20px
+}
+
