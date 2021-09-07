@@ -1,5 +1,8 @@
 import "./CharacterDetail.css"
-import CharacterInfo from "../components/CharacterInfo"
+import CharacterInfo from "../components/CharacterInfo";
+
+
+
 
 const informComics = [
   {text: "All-Winners Squad: Band of Heroes (2011) #3"},
@@ -17,6 +20,7 @@ const informComics = [
 
 
 export default function CharactersDetail(props) {
+  
 
     return (
       <div className="caracterDetail">
@@ -56,8 +60,13 @@ export default function CharactersDetail(props) {
 <div className="caracterDetail__comicslist">
           <CharacterInfo />
           </div>
-          
+           
+          <div className="background-rightdown"></div>
+             
+     
+
       </div>
+      
     );
   }
   

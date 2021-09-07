@@ -6,7 +6,6 @@
   align-items: stretch;
 }
 .characterList_characters {
-  width: 60%;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -15,9 +14,18 @@
 .characterList_detail {
   width: calc(40% - 20px);
   padding-left: 20px;
-  
 }
 
-.caracterDetail__header{
+.caracterDetail__header {
   height: 180px;
+}
+.characterList_wraper {
+  width: 60%;
+}
+.characterList_but {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  margin-top: 20px;
 }
