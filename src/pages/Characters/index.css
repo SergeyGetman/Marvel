@@ -1,0 +1,35 @@
+.characterList_charactersnext {
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 80%;
+}
+.characterList_but {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  margin-top: 20px;
+}
+.background-rightdowntwo {
+  background-image: url('../../assets/images/characters/bg\ asset.png');
+  width: 467px;
+  height: 372px;
+  position: absolute;
+  right: 0;
+}
+
+.characterList_next {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.characterList_detailnext {
+  width: calc(40% - 20px);
+  padding-left: 20px;
+  background-color: rgb(98, 98, 194);
+}
