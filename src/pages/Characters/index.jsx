@@ -56,17 +56,34 @@ export default function Characters() {
   return (
     <>
       <HeroBanner />
-      <div className="characterList_next">
-        <div className="characterList_charactersnext">
-          {charactersList.map((character) => (
-            <CharactersCard
-              name={character.name}
-              photo={character.image}
-              key={character.name}
-            />
-          ))}
+      <div className="characterList">
+        <div className="characterList_wraper">
+          <div className="characterList_characters">
+            {charactersList.map((character) => (
+              <CharactersCard
+                name={character.name}
+                photo={character.image}
+                key={character.name}
+              />
+            ))}
+          </div>
         </div>
-        <div className="characterList_detailnext">bla__bla__bla</div>
+        <div className="characterList_detail">
+          <div className="caracterDetail_two">
+            <div className="block_inside">
+              <div className="caracterDetail_title">
+                Please select a character to see information
+              </div>
+              <div className="caracterDetail_skeleton_circle"></div>
+
+              <div className="caracterDetail_skeleton_rectangle_circle"></div>
+
+              <div className="caracterDetail_skeleton_rectangle"></div>
+              <div className="caracterDetail_skeleton_rectangle"></div>
+              <div className="caracterDetail_skeleton_rectangle"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Button className="characterList_but" type="primary">

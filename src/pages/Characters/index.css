@@ -1,10 +1,10 @@
-.characterList_charactersnext {
+/* .characterList_charactersnext {
   margin-top: 50px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  max-width: 80%;
+  width: 60%;
 }
 .characterList_but {
   display: block;
@@ -21,7 +21,7 @@
   right: 0;
 }
 
-.characterList_next {
+.characterList {
   margin-top: 50px;
   display: flex;
   flex-wrap: nowrap;
@@ -32,4 +32,49 @@
   width: calc(40% - 20px);
   padding-left: 20px;
   background-color: rgb(98, 98, 194);
+} */
+
+.caracterDetail_two {
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgb(20 7 199 / 50%);
+}
+
+.caracterDetail_title {
+  width: 338px;
+  height: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 11px;
+  color: #000000;
+  display: inline-flex;
+  margin-top: 25px;
+  margin-left: 55px;
+}
+
+.caracterDetail_skeleton_circle {
+  background-image: url('../../assets/images/characters/Ellipse\ 1.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+  margin-left: 40px;
+  position: absolute;
+}
+.caracterDetail_skeleton_rectangle_circle {
+  background-image: url('../../assets/images/characters/Rectangle\ 7.png');
+  width: 300px;
+  height: 16px;
+  margin-left: 105px;
+}
+
+.caracterDetail_skeleton_rectangle {
+  background-image: url('../../assets/images/characters/Rectangle\ 7.png');
+  width: 395px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
