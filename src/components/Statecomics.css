@@ -1,0 +1,33 @@
+.caracter_comics {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: wheat;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+  transition: all 200ms;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.caracter_comics:hover {
+  filter: drop-shadow(0px 5px 20px #9f0013);
+  margin-top: -5px;
+}
+.caractercomics_photo {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.caractercomics_photo::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.caractercomics_name {
+  color: rgb(25, 18, 18);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  height: 60px;
+}

@@ -55,6 +55,10 @@
   margin-left: 55px;
 }
 
+.caracterDetail_skeleton {
+  padding: 10px;
+}
+
 .caracterDetail_skeleton_circle {
   background-image: url('../../assets/images/characters/Ellipse\ 1.png');
   background-repeat: no-repeat;
@@ -77,4 +81,11 @@
   height: 30px;
   margin-left: 40px;
   margin-top: 40px;
+}
+.background-rightdowntwo {
+  background-image: url('../../assets/images/characters/bg\ asset.png');
+  background-repeat: no-repeat;
+  width: 467px;
+  height: 735px;
+  margin-top: 120%;
 }

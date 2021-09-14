@@ -77,10 +77,12 @@ export default function Characters() {
               <div className="caracterDetail_skeleton_circle"></div>
 
               <div className="caracterDetail_skeleton_rectangle_circle"></div>
-
-              <div className="caracterDetail_skeleton_rectangle"></div>
-              <div className="caracterDetail_skeleton_rectangle"></div>
-              <div className="caracterDetail_skeleton_rectangle"></div>
+              <div className="caracterDetail_skeleton">
+                <div className="caracterDetail_skeleton_rectangle"></div>
+                <div className="caracterDetail_skeleton_rectangle"></div>
+                <div className="caracterDetail_skeleton_rectangle"></div>
+              </div>
+              <div className="background-rightdowntwo"></div>
             </div>
           </div>
         </div>
@@ -89,7 +91,6 @@ export default function Characters() {
       <Button className="characterList_but" type="primary">
         My name
       </Button>
-      <div className="background-rightdowntwo"></div>
     </>
   );
 }

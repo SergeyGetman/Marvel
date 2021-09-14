@@ -1,7 +1,6 @@
 import './CharacterCard.css';
 
 export default function CharactersCard(props) {
-
   return (
     <div className="caracterCard">
       <div
