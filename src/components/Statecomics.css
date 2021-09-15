@@ -3,8 +3,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+
   color: wheat;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(3px 2px 7px rgba(0, 0, 0, 0.25));
   transition: all 200ms;
   cursor: pointer;
   margin-top: 50px;
@@ -18,6 +19,9 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  width: 225px;
+  height: 346px;
+  padding-left: 20px;
 }
 .caractercomics_photo::after {
   content: '';
@@ -29,5 +33,19 @@
   font-size: 18px;
   font-weight: bold;
   padding: 15px;
-  height: 60px;
+  height: 2px;
+}
+.caracterCard_price {
+  color: #00000099;
+
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 33px;
+  height: 18px;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
 }

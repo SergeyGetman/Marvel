@@ -8,6 +8,7 @@ export default function CharactersCard(props) {
         style={{ backgroundImage: `url(${props.photo})` }}
       ></div>
       <div className="caracterCard__name">{props.name}</div>
+    
     </div>
   );
 }

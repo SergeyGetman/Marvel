@@ -43,3 +43,9 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
+.but_comics {
+  margin: 0;
+  left: 45%;
+  margin-top: 118px;
+  width: 170px;
+}

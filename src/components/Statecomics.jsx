@@ -8,6 +8,7 @@ export default function CharactersComics(props) {
         style={{ backgroundImage: `url(${props.photo})` }}
       ></div>
       <div className="caractercomics_name">{props.name}</div>
+      <div className="caracterCard_price">{props.price}</div>
     </div>
   );
 }

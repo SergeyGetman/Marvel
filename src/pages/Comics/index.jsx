@@ -1,5 +1,6 @@
 import './index.css';
 import CharactersComics from '../../components/Statecomics';
+import Button from '../../components/ui/Button/Button';
 
 import UW from '../../assets/images/characters/banners/UW.png';
 import UW2 from '../../assets/images/characters/banners/UW.png';
@@ -13,39 +14,48 @@ import XMEN4 from '../../assets/images/characters/banners/x-men.png';
 const comicList = [
   {
     image: UW,
-    name: 'Daimon Hellstorm',
+    name: 'ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB',
+    price: "9.99$"
   },
   {
     image: XMEN,
-    name: 'Daimon Hellstorm',
+    name: 'X-Men: Days of Future Past',
+    price: "NOT AVAILABLE"
   },
   {
     image: UW2,
-    name: 'Daimon Hellstorm',
+    name: 'ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB',
+    price: "9.99$"
   },
   {
     image: XMEN2,
-    name: 'Daimon Hellstorm',
+    name: 'X-Men: Days of Future Past',
+    price: "NOT AVAILABLE"
   },
   {
     image: UW3,
-    name: 'Daimon Hellstorm',
+    name: 'ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB',
+    price: "9.99$"
   },
   {
     image: XMEN3,
-    name: 'Daimon Hellstorm',
+    name: 'X-Men: Days of Future Past',
+    price:  "NOT AVAILABLE"
   },
   {
     image: UW4,
-    name: 'Daimon Hellstorm',
+    name: 'ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB',
+    price: "9.99$"
   },
   {
     image: XMEN4,
-    name: 'Daimon Hellstorm',
+    name: 'X-Men: Days of Future Past',
+    price:  "NOT AVAILABLE"
   },
 ];
 
 export default function Comics(props) {
+
   return (
     <>
       <div className="header_logo">
@@ -60,14 +70,16 @@ export default function Comics(props) {
               photo={elem.image}
               name={elem.name}
               key={elem.name}
+              price={elem.price}
             />
           ))}
         </div>
-        <div className="main_heroes_description">1..2</div>
-        <div className="main_heroes_availabitily">1...3</div>
+        <Button type="primary" className="but_comics">Load More</Button>
+        {/* <div className="main_heroes_description">1..2</div>
+        <div className="main_heroes_availabitily">1...3</div> */}
       </div>
 
-      <div>Footer</div>
+      {/* <div>Footer</div> */}
     </>
   );
 }

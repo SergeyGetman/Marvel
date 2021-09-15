@@ -25,9 +25,11 @@
   padding-top: 100%;
 }
 .caracterCard__name {
-  color: #fff;
-  font-size: 18px;
+  width: 225px;
+  height: 36px;
+  font-family: Roboto Condensed;
+  font-style: normal;
   font-weight: bold;
-  padding: 15px;
-  height: 60px;
+  font-size: 14px;
+  line-height: 16px;
 }
