@@ -1,0 +1,38 @@
+.header_logo {
+  background-image: url('../assets/images/characters/banners/Banner.png');
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_people {
+  background-image: url('../assets/images/characters/banners/Avengers.png');
+  width: 152px;
+  height: 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-left: 45px;
+}
+.header_title {
+  color: rgb(219, 226, 224);
+  width: 255px;
+  height: 64px;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
+.header_avengers {
+  background-image: url('../assets/images/characters/banners/Avengers\ logo.png');
+  width: 133px;
+  height: 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-right: 45px;
+}

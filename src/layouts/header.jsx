@@ -15,6 +15,9 @@ export default function Header(props) {
         <Link to="/comics" className="nav-item">
           Comics
         </Link>
+        <Link to="/comicsinfo" className="nav-item">
+          Comicsinfo
+        </Link>
       </nav>
     </header>
   );

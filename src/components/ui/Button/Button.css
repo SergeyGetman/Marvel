@@ -9,6 +9,7 @@
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%);
   /* clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%); */
 }
 .button.primary {

@@ -1,6 +1,7 @@
 import './index.css';
 import CharactersComics from '../../components/Statecomics';
 import Button from '../../components/ui/Button/Button';
+import { Comicsheader } from '../../components/Comicsheader';
 
 import UW from '../../assets/images/characters/banners/UW.png';
 import UW2 from '../../assets/images/characters/banners/UW.png';
@@ -58,11 +59,7 @@ export default function Comics(props) {
 
   return (
     <>
-      <div className="header_logo">
-        <div className="header_people"></div>
-        <div className="header_title">New comics every week! Stay tuned!</div>
-        <div className="header_avengers"></div>
-      </div>
+      <Comicsheader />
       <div className="main_list">
         <div className="main_heroes">
           {comicList.map((elem) => (
