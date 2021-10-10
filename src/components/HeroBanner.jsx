@@ -3,8 +3,8 @@ import Button from './ui/Button/Button';
 import './HeroBanner.css';
 
 export default function HeroBanner(props) {
-  console.log(props);
-  let x = console.log('start now');
+  const onClick = (event) => console.log(event);
+
   return (
     <section className="hero">
       <div className="hero__character">
@@ -18,7 +18,7 @@ export default function HeroBanner(props) {
             quite smart and compassionate...
           </div>
           <div className="toolbar">
-            <Button onClick={props.x} type="primary">
+            <Button type="primary" onClick={(e) => onClick(e)}>
               Homepage
             </Button>
 

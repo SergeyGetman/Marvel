@@ -1,11 +1,10 @@
 import './Button.css';
 
 export default function Button(props) {
-  const { type, children, className, url } = props;
-
+  const { type, children, ...other } = props;
   return (
     <>
-      <button className={`button ${type} ${className} ${url}`}>
+      <button className={`button ${type}`} {...other}>
         {children}
       </button>
     </>

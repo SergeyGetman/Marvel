@@ -9,15 +9,14 @@ const informComics = [
   { text: 'AMAZING SPIDER-MAN VOL. 7: BOOK OF EZEKIEL TPB (Trade Paperback)' },
   { text: 'Amazing-Spider-Man: Worldwide Vol. 8 (Trade Paperback)' },
   {
-    text:
-      'Asgardians Of The Galaxy Vol. 2: War Of The Realms (Trade Paperback)',
+    text: 'Asgardians Of The Galaxy Vol. 2: War Of The Realms (Trade Paperback)',
   },
   { text: 'Vengeance (2011) #4' },
   { text: 'Avengers (1963) #1' },
   { text: 'Avengers (1996) #1' },
 ];
 
-export default function CharactersDetail(props) {
+export default function CharacterDetail(props) {
   return (
     <div className="caracterDetail">
       <div className="caracterDetail__header">
@@ -39,8 +38,8 @@ export default function CharactersDetail(props) {
       <div className="caracterDetail__title">COMICS</div>
 
       <div className="caracterDetail__comicslist">
-        {informComics.map((elem) => (
-          <CharacterInfo text={elem.text} />
+        {informComics.map((elem, index) => (
+          <CharacterInfo text={elem.text} key={index} />
         ))}
       </div>
 

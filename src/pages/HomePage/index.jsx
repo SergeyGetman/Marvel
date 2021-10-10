@@ -3,58 +3,32 @@ import CharactersCard from '../../components/CharacterCard';
 import CharacterDetail from '../../components/CharacterDetail';
 import Button from '../../components/ui/Button/Button';
 
-import Abyss from '../../assets/images/characters/abyss.jpg';
-import AdamWarlock from '../../assets/images/characters/adam_warlock.jpg';
-import BoomBoom from '../../assets/images/characters/boom_boom.jpg';
-import Calypso from '../../assets/images/characters/calypso.jpg';
-import ColleenWing from '../../assets/images/characters/colleen_wing.jpg';
-import DaimonHellstorm from '../../assets/images/characters/diamon_hellstorm.jpg';
-import DamageControl from '../../assets/images/characters/damage_control.jpg';
-import Hulk from '../../assets/images/characters/hulk.jpg';
-import Loki from '../../assets/images/characters/loki.jpg';
-
 import './HomePage.css';
+import { HTTPRequest } from '../../api';
+import { useEffect, useState } from 'react';
 
-const characters = [
-  {
-    image: Abyss,
-    name: 'Abyss',
-  },
-  {
-    image: Loki,
-    name: 'Loki',
-  },
-  {
-    image: AdamWarlock,
-    name: 'Adam Warlock',
-  },
-  {
-    image: BoomBoom,
-    name: 'Boom Boom',
-  },
-  {
-    image: Calypso,
-    name: 'Calypso',
-  },
-  {
-    image: ColleenWing,
-    name: 'Colleen Wing',
-  },
-  {
-    image: DaimonHellstorm,
-    name: 'Daimon Hellstorm',
-  },
-  {
-    image: DamageControl,
-    name: 'Damage Control',
-  },
-  {
-    image: Hulk,
-    name: 'Hulk',
-  },
-];
+const getCharacters = () =>
+  HTTPRequest({
+    method: 'GET',
+    url: '/v1/public/characters',
+  });
 
 export default function HomePage(props) {
+  const [characters, setCharacters] = useState([]);
+
+  useEffect(() => {
+    getCharacters().then(({ data }) => {
+      setCharacters(
+        data.results.map((character) => {
+          return {
+            name: character.name,
+            image: `${character.thumbnail.path}.${character.thumbnail.extension}`,
+          };
+        }),
+      );
+    });
+  }, [setCharacters]);
+
   return (
     <>
       <HeroBanner />
