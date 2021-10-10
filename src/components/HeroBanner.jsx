@@ -2,7 +2,9 @@ import Button from './ui/Button/Button';
 
 import './HeroBanner.css';
 
-export default function HeroBanner() {
+export default function HeroBanner(props) {
+  console.log(props);
+  let x = console.log('start now');
   return (
     <section className="hero">
       <div className="hero__character">
@@ -16,7 +18,10 @@ export default function HeroBanner() {
             quite smart and compassionate...
           </div>
           <div className="toolbar">
-            <Button type="primary">Homepage</Button>
+            <Button onClick={props.x} type="primary">
+              Homepage
+            </Button>
+
             <Button type="secondary">Wikki</Button>
           </div>
         </div>

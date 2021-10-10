@@ -1,4 +1,4 @@
-import "./Comicsheader.css"
+import './Comicsheader.css';
 
 export function Comicsheader() {
   return (
@@ -9,5 +9,5 @@ export function Comicsheader() {
         <div className="header_avengers"></div>
       </div>
     </>
-  )
+  );
 }
