@@ -9,7 +9,8 @@ const informComics = [
   { text: 'AMAZING SPIDER-MAN VOL. 7: BOOK OF EZEKIEL TPB (Trade Paperback)' },
   { text: 'Amazing-Spider-Man: Worldwide Vol. 8 (Trade Paperback)' },
   {
-    text: 'Asgardians Of The Galaxy Vol. 2: War Of The Realms (Trade Paperback)',
+    text:
+      'Asgardians Of The Galaxy Vol. 2: War Of The Realms (Trade Paperback)',
   },
   { text: 'Vengeance (2011) #4' },
   { text: 'Avengers (1963) #1' },

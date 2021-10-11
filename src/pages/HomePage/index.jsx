@@ -15,6 +15,7 @@ const getCharacters = () =>
 
 export default function HomePage(props) {
   const [characters, setCharacters] = useState([]);
+  // console.log(setCharacters.variants);
 
   useEffect(() => {
     getCharacters().then(({ data }) => {
